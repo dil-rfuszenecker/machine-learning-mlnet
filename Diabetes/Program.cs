@@ -48,9 +48,7 @@ class Program
                     labelColumnName: "Label",
                     featureColumnName: "Features"
                 )
-            )
-
-            .AppendCacheCheckpoint(mlContext);
+            );
 
         var model = pipeline.Fit(split.TrainSet);
 
